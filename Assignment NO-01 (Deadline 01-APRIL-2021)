@@ -1,0 +1,261 @@
+STRING FUNCTIONS:
+
+# Use of Lower Function
+name='FaHeeM SiDDiQue'
+name.lower()
+
+# Use of Upper Function
+name='FaHeeM SiDDiQue'
+name.upper()
+
+# Use of Capitalize Function
+name='FaHeeM SiDDiQue'
+name.capitalize()
+
+# Use of Swapcase Function
+name='FaHeeM SiDDiQue'
+name.swapcase()
+
+# Use of Title Function
+name='FaHeeM SiDDiQue'
+name.title()
+
+# Expandtab & Center Functions
+txt = "H\te\tl\tl\to"
+v=txt.expandtabs(8)
+w=txt.expandtabs(6) 
+x = txt.expandtabs(8) 
+y=txt.expandtabs(6) 
+z=txt.expandtabs(4) 
+y1=y.center(33) 
+z1=z.center(33) 
+w1=w.center(33) 
+v1=v.center(33) 
+print(x) 
+print(y1) 
+print(z1) 
+print(w1) 
+print(v1)
+
+# Use of Count & Upper Lower Function
+a= "MY NAME IS FAHEEM SIDDIQUE"
+b=a.upper()
+c=a.lower()
+x=a.count('A')
+y=b.count('A')
+z=c.count('A')
+print(x)
+print(y)
+print(z)
+
+# Use of Format Function
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {}, I'm {:b}".format("john",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+print(txt1)
+print(txt2)
+print(txt3)
+
+# Use of Find, Rfind, Index & Rindex Functions
+txt = "Hello, welcome to my world."
+x = txt.index("o",5,19)
+y = txt.find("o",5,19)
+b=txt.find("o",5,10)
+c=txt.rfind('o')
+d=txt.rfind('x')
+e=txt.rindex('o')
+f=txt.rfind('')
+print(x)
+print(y)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
+# Use of isalpha & isalnum Functions
+a1="ILovePakistan"
+b1="I Love Pakistan"
+
+a2="IL0v3Pakistan"
+b2="ILovePakistan"
+
+x1=a1.isalpha()
+x2=b1.isalpha()
+
+y1=a2.isalnum()
+y2=b2.isalnum()
+
+print(x1)
+print(x2)
+print(y1)
+print(y2)
+
+# Use of isnumeric , isdigit & isdecimal Functions
+d = "-1"
+e = "1.5"
+
+print(d.isnumeric())
+print(e.isnumeric())
+print(d.isdigit())
+print(e.isdecimal())
+print(e.isdigit())
+print(d.isdecimal())
+
+# Use of rjust & ljust Functions
+
+txt = "Sun Sets in the"
+x = txt.ljust(25, "_")
+y = txt.rjust(25, "_")
+
+print(x)
+print(y)
+
+# Use of Endswith & Startswith Functions
+f1='My name is Faheem Siddique'
+f2='I love my country Pakistan'
+s1=f1.endswith('Siddique')
+s2=f1.endswith('Faheem')
+s3=f2.endswith('n')
+s4=f2.endswith('pakistan')
+print(s1)
+print(s2)
+print(s3)
+print(s4)
+
+# Use of Islower, Isupper & Istitle Function
+q1='FAHEEM SIDDIQUE'
+q2='faheemsiddique'
+q3='Faheem Siddique'
+p1=q1.islower()
+p2=q1.isupper()
+p3=q2.islower()
+p4=q2.isupper()
+p5=q3.istitle()
+print(p1)
+print(p2)
+print(p3)
+print(p4)
+print(p5)
+
+# Use of Join Function
+ab=('Faheem','Siddique')
+cd='-'.join(ab)
+print(ab)
+print(cd)
+
+# Use of Lstrip Rstrip & Strip Functions
+s='*******Faheem Siddique*******'
+t='       Pakistan       '
+u=s.lstrip('*')
+v=t.lstrip()
+w=s.strip('*')
+x=s.rstrip('*')
+print(u)
+print(v)
+print(w)
+print(x)
+
+# Use of Maketrans and Translate Functions
+xy = "Faheem Siddique Faheem Siddique"
+yy = xy.maketrans("Faheem Siddique", "FAHEEM SIDDIQUE")
+zz = xy.maketrans("d", "D")
+print(xy.translate(zz))
+print(xy.translate(yy))
+
+# Use of Partition & Rpartition Functions
+aa='Engrt Faheem Siddique Engr Faheem Siddique'
+bb=aa.partition('Faheem')
+cc=aa.partition('heem')
+dd=aa.rpartition('Faheem')
+print(bb)
+print(cc)
+
+# Use of Replace Function
+xy = "Faheem Siddique Faheem Siddique"
+yy=xy.replace('Faheem','FAHEEM')
+zz=xy.replace('Faheem','FAHEEM',1)
+print(yy)
+print(zz)
+
+# Use of Split, Rsplit & Splitlines Functions
+ee='My name is Faheem.\nI live in Pakistan.\nI Love my Country.'
+ff='Python is in-demand language. It is widely used. I love Python most. Learn Python'
+gg=ff.split()
+hh=ff.split('.',2)
+ii=ff.rsplit('.')
+jj=ff.rsplit('.',2)
+kk=ee.splitlines()
+ll=ee.splitlines(True)
+print(gg)
+print(hh)
+print(ii)
+print(jj)
+print(ee)
+print(kk)
+print(ll)
+
+# Use of Zfill Function
+oo='Faheem Siddique'
+pp=oo.zfill(20)
+print(pp)
+
+ESCAPE SEQUENCES:
+
+# Single & Double Quotes
+aa=('My Name is \'Faheem Siddique\'')
+bb=('My Name is \"Faheem Siddique\"')
+print(aa)
+print(bb)
+
+# Backslash
+cc=("My Name is \\Faheem Siddique\\")
+print(cc)
+
+# New Line
+dd=('Apple \nMango \nBanana')
+print(dd)
+
+# Carriage Return
+ee=('Apple \rMango')
+print(ee)
+
+# Tab
+ff=('Faheem\tSiddique')
+gg=('Faheem\t\tSiddique')
+print(ff)
+print(gg)
+
+# Backspace
+hh=('Faheem \bSiddique')
+ii=('Faheem \b\bSiddique')
+print(hh)
+print(ii)
+
+# Octal Value
+jj=('\111 \112 \113 \114 \115 \116')
+print(jj)
+
+# Hexadecimal Value
+kk=('\x50 \x51 \x52 \x53 \x54')
+print(kk)
+
+ARRAY SLICING:
+
+arr1=[0,1,2,3,4,5,6,7,8,9,10]
+print(arr1)
+slice1=(arr1[1:5])
+slice2=(arr1[3:10])
+slice3=(arr1[1:10:2])
+slice4=(arr1[0:10:2])
+slice5=(arr1[:10:3])
+slice6=(arr1[1::2])
+slice7=(arr1[1:7:])
+
+print(slice1)
+print(slice2)
+print(slice3)
+print(slice4)
+print(slice5)
+print(slice6)
+print(slice7)
